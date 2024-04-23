@@ -17,7 +17,7 @@ public class HazelcastConfig {
 
     private final String profiles;
 
-    public HazelcastConfig(@Value("${spring.profiles.active}") String profiles) {
+    public HazelcastConfig(@Value("${spring.profiles.active:local}") String profiles) {
         this.profiles = profiles;
     }
 
